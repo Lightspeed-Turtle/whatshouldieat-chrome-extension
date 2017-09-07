@@ -1,0 +1,102 @@
+[
+    {
+        "name": "Poulet et légumes au cari 30 minutes",
+        "preparation": "15 min",
+        "cuisson": "15 min",
+        "portions": 4,
+        "imageUrl" : "https://images.ricardocuisine.com/services/recipes/1074x1074_1199436636533acfd098b39-background.jpg",
+        "ingredients": [
+            {
+                "item": "Plaque",
+                "ingredients": [
+                    "huile d'olive",
+                    "sirop d'\u00e9rable",
+                    "poudre de cari",
+                    "demi-poitrines de poulet d\u00e9soss\u00e9es et sans la peau",
+                    "poivrons de couleurs vari\u00e9es",
+                    "courgette",
+                    "oignon",
+                    "sel et poivre"
+                ]
+            },
+            {
+                "item": "Coucous",
+                "ingredients": [
+                    "bouillon de poulet",
+                    "pesto",
+                    "couscous",
+                    "lime",
+                    "sel et poivre"
+                ]
+            }
+        ],
+        "instructions": [
+            {
+                "item": "Plaque",
+                "steps": [          
+                    "1. Placer la grille dans le haut du four. Préchauffer le four à gril (broil).",
+                    "2. Dans un petit bol, mélanger l’huile, le sirop d’érable et le cari. Réserver.",
+                    "3. Déposer le poulet sur une moitié de la plaque de cuisson et répartir les légumes sur l’autre. Verser le mélange de cari sur la viande et les légumes, saler, poivrer et bien mélanger."
+                ]
+            },
+            {
+            "item": "Couscous",
+                "steps": [          
+                    "1. Placer la grille dans le haut du four. Préchauffer le four à gril (broil).",
+                    "2. Dans un petit bol, mélanger l’huile, le sirop d’érable et le cari. Réserver.",
+                    "3. Déposer le poulet sur une moitié de la plaque de cuisson et répartir les légumes sur l’autre. Verser le mélange de cari sur la viande et les légumes, saler, poivrer et bien mélanger."
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Poulet et légumes au cari 30 minutes # 2",
+        "preparation": "15 min",
+        "cuisson": "15 min",
+        "portions": 4,
+        "imageUrl" : "https://images.ricardocuisine.com/services/recipes/1074x1074_1199436636533acfd098b39-background.jpg",
+        "ingredients": [
+            {
+                "item": "Plaque",
+                "ingredients": [
+                    "huile d'olive",
+                    "sirop d'\u00e9rable",
+                    "poudre de cari",
+                    "demi-poitrines de poulet d\u00e9soss\u00e9es et sans la peau",
+                    "poivrons de couleurs vari\u00e9es",
+                    "courgette",
+                    "oignon",
+                    "sel et poivre"
+                ]
+            },
+            {
+                "item": "Coucous",
+                "ingredients": [
+                    "bouillon de poulet",
+                    "pesto",
+                    "couscous",
+                    "lime",
+                    "sel et poivre"
+                ]
+            }
+        ],
+        "instructions": [
+            {
+                "item": "Plaque",
+                "steps": [          
+                    "1. Placer la grille dans le haut du four. Préchauffer le four à gril (broil).",
+                    "2. Dans un petit bol, mélanger l’huile, le sirop d’érable et le cari. Réserver.",
+                    "3. Déposer le poulet sur une moitié de la plaque de cuisson et répartir les légumes sur l’autre. Verser le mélange de cari sur la viande et les légumes, saler, poivrer et bien mélanger."
+                ]
+            },
+            {
+            "item": "Couscous",
+                "steps": [          
+                    "1. Placer la grille dans le haut du four. Préchauffer le four à gril (broil).",
+                    "2. Dans un petit bol, mélanger l’huile, le sirop d’érable et le cari. Réserver.",
+                    "3. Déposer le poulet sur une moitié de la plaque de cuisson et répartir les légumes sur l’autre. Verser le mélange de cari sur la viande et les légumes, saler, poivrer et bien mélanger."
+                ]
+            }
+        ]
+    }
+]
