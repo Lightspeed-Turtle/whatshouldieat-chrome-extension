@@ -68,12 +68,12 @@ footer{
   position:fixed;
   left:0px;
   bottom:0px;
-  height:4em;
   width:100%;
   padding-right: 2em;
   background-color: white;
   color: black;
 }
+
 
 .underline {
   text-decoration: underline;
@@ -81,4 +81,5 @@ footer{
 
 #brand-call-to-action {
   text-align: right;
+  margin-bottom: 1.5em;
 }
