@@ -1,20 +1,54 @@
     $(function() {
         var recipe;
+        var CACHE_KEY = 'cached_recipes';
+        var TIMESTAMP_KEY = 'cached_recipes_ts';
+        var DAYS_UNTIL_INVALIDATION = 1;
 
         $(function() {
-            createContentfulClient().getEntries({
-                'content_type': 'recipe'
-            }).then(function(entries) {
-                recipe = fetchRandomRecipeFrom(entries.items);
-                
-                setBackground();
-                setLogo();
-                setRecipeName();
-                setExecutionTime();
-                setPortions();
-                setLink();
-            });
+            fetchRecipe();
         });
+
+        function fetchRecipe() {
+            var cachedRecipes = fetchCache(CACHE_KEY);
+            var cacheTimestamp = new Date(JSON.parse(fetchCache(TIMESTAMP_KEY)));
+
+            // check if cache is older than specified limit
+            var cacheIsInvalid = (new Date(new Date().getTime() - cacheTimestamp.getTime()).getUTCDate() - 1) > DAYS_UNTIL_INVALIDATION;
+
+            if (cachedRecipes && !cacheIsInvalid) {
+                recipe = fetchRandomRecipeFrom(JSON.parse(cachedRecipes).items);
+
+                setRecipe();
+            }
+            else {
+                createContentfulClient().getEntries({
+                    'content_type': 'recipe'
+                }).then((entries) => {
+                    cache(CACHE_KEY, entries);
+                    cache(TIMESTAMP_KEY, new Date());
+                    recipe = fetchRandomRecipeFrom(entries.items);
+
+                    setRecipe();
+                });
+            }
+        }
+
+        function setRecipe() {
+            setBackground();
+            setLogo();
+            setRecipeName();
+            setExecutionTime();
+            setPortions();
+            setLink(); 
+        }
+
+        function fetchCache(key) {
+            return localStorage.getItem(key);
+        }
+
+        function cache(key, value) {
+            localStorage.setItem(key, JSON.stringify(value));
+        }
 
         function createContentfulClient() {
             var SPACE_ID = 'lz8rxz1m2o5d'
