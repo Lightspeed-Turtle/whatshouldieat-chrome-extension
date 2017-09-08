@@ -1,6 +1,6 @@
 {
-  "name": "les-recettes-de-ricardo",
-  "title": "Les recettes de Ricardo",
+  "name": "foodie-tab",
+  "title": "Foodie Tab",
   "version": "1.0",
   "author": "Lightspeed Turtle",
   "devDependencies": {
