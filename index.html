@@ -3,79 +3,66 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="LightSpeed Turtle">
 
-    <title>Nouvelles recettes de Ricardo</title>
+    <title>Nouvelles recettes à essayer!</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"> -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
 
     <!-- Theme CSS -->
     <link href="css/ext.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body class="intro">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header navbar-right">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a href="https://ricardocuisine.com">
-                    <h1 class="uppercase bold" style="margin-bottom:0;">Ricardo</h1><h3 style="text-align:right;">cuisine.com</h3>
-                </a>
+    <div id="container"> 
+        <section id="recipe">
+            <div class="row">
+                <a id="logo-link" href="#"><div id="logo" class="col-md-6 col-md-offset-6"></div></a>
             </div>
-        </div>
-    </nav>
-
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div id="summary" class="col-md-3" style="color: black;background-color: rgba(255, 255, 255, 0.8);text-align:left;"></div>
-                    <div id="recipe" class="col-md-8 col-md-offset-1" style="color: black;background-color: rgba(255, 255, 255, 0.8);">
-                        <div class="row">
-                            <div id="ingredients" class="col-md-6" style="text-align: left;">
-                                <h2>Ingredients</h2>
-                            </div>
-                            <div id="instructions" class="col-md-6">
-                                <h2>Préparation</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row  navbar-right">
-                    <h3>Powered by Lightspeed Turtle</h3>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-6">
+                    <h1 id="name" class"uppercase"></h1>
                 </div>
             </div>
-        </div>
-    </header>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-6">
+                    <h2 id="execution" class"uppercase bold"></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-6">
+                    <h4 id="portions" class"uppercase bold"></h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-md-offset-6">
+                    <a id="link" href="#" role="button" class="btn btn-default uppercase">voir la recette complète</a>
+                </div>
+            </div>
+        </section>
 
+        <footer>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 id="rate-call-to-action" class="underline">Rate and review Foodie Tab</h3>
+                </div>
+                <div class="col-md-6">
+                    <h3 id="brand-call-to-action">Created and powered by <a href="#" class="underline">Lightspeed Turtle</a></h3>
+                </div>
+            </div>
+        </footer>
 
+    </div>
 
-    <!-- jQuery -->
     <script src="vendor/jquery/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <script src="js/contentful.js"></script>
