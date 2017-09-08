@@ -34,7 +34,7 @@
         }
 
         function setBackground() {
-            $(".intro").css("background", "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%), url(https:" + recipe.fields.image.fields.file.url  + ") no-repeat fixed");
+            $(".intro").css("background", "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(https:" + recipe.fields.image.fields.file.url  + ") no-repeat fixed");
             $(".intro").css("background-size", "cover");
         }
 
