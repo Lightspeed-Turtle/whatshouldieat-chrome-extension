@@ -1,5 +1,6 @@
     $(function() {
         var recipe;
+        
         var CACHE_KEY = 'cached_recipes';
         var TIMESTAMP_KEY = 'cached_recipes_ts';
         var DAYS_UNTIL_INVALIDATION = 1;
@@ -76,20 +77,19 @@
         }
 
         function setLogo() {
-            console.log(recipe);
-            $("#logo").append("<img src=\"https:" + recipe.fields.logo.fields.file.url + "\" />")
+            $("#logo").attr("src", "https:" + recipe.fields.logo.fields.file.url);
         }
 
         function setRecipeName() {
-            $("#name")[0].innerHTML = recipe.fields.name;
+            $("#name").text(recipe.fields.name);
         }
 
         function setExecutionTime() {
-            $("#execution")[0].innerHTML = "temps d'exécution · " + recipe.fields.preparationTime;
+            $("#execution").text("temps d'exécution · " + recipe.fields.preparationTime);
         }
 
         function setPortions() {
-            $("#portions")[0].innerHTML = recipe.fields.portions;
+            $("#portions").text(recipe.fields.portions);
         }
 
         function setLink() {
