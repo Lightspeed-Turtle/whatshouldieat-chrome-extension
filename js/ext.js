@@ -70,7 +70,6 @@
         function setBackground() {
             var quality = 100;
             var url = recipe.fields.image.fields.file.url + '?fm=jpg&w=1024&h=720&q=' + quality;
-            //var url = recipe.fields.image.fields.file.url + '?fm=jpg&fl=progressive';
 
             $(".intro").css("background", "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(https:" + url + ") no-repeat fixed");
             $(".intro").css("background-size", "cover");
