@@ -31,8 +31,9 @@ html {
 }
 
 h1 {
-  font-size: 5em;
-  font-family: "Source Sans Pro", sans-serif;
+  font-size: 4em;
+  font-family: "Old Standard TT", sans-serif;
+  font-style: italic;
 }
 
 h3 {
@@ -41,6 +42,10 @@ h3 {
 
 .bold {
     font-weight: 700;
+}
+
+#portions {
+  margin-top: 0px;
 }
 
 .intro {
@@ -53,13 +58,15 @@ h3 {
 #logo {
   height: 100px;
   max-width: 300px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 
 #link {
   font-size: 1.5em !important;
   font-weight: bold !important;
   text-transform: uppercase;
-  margin-top: 6em;
+  margin-top: 70px;
   border-radius: initial !important;
 }
 

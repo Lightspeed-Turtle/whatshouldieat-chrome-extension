@@ -72,7 +72,7 @@
             var quality = 100;
             var url = recipe.fields.image.fields.file.url + '?fm=jpg&w=1024&h=720&q=' + quality;
 
-            $(".intro").css("background", "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(https:" + url + ") no-repeat fixed");
+            $(".intro").css("background", "linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 42%,rgba(0,0,0,1) 81%,rgba(0,0,0,1) 99%), url(https:" + url + ") no-repeat fixed");
             $(".intro").css("background-size", "cover");
         }
 
