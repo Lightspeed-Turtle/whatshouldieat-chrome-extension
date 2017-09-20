@@ -10,28 +10,24 @@
         });
 
         function fetchRecipe() {
-            //var cachedRecipes = fetchCache(CACHE_KEY);
-            //var cacheTimestamp = new Date(JSON.parse(fetchCache(TIMESTAMP_KEY)));
+            var entry_id = getParameterByName("entry_id");
 
-            // check if cache is older than specified limit
-            // var cacheIsInvalid = (new Date(new Date().getTime() - cacheTimestamp.getTime()).getUTCDate() - 1) > DAYS_UNTIL_INVALIDATION;
-
-            // if (cachedRecipes && !cacheIsInvalid) {
-            //     recipe = fetchRandomRecipeFrom(JSON.parse(cachedRecipes).items);
-
-            //     setRecipe();
-            // }
-            // else {
+            if (entry_id) {
+                createContentfulClient()
+                .getEntry(entry_id)
+                .then((entry) => {
+                    recipe = fetchRandomRecipeFrom(entries.items);
+                    setRecipe();
+                });
+            }
+            else {
                 createContentfulClient().getEntries({
                     'content_type': 'recipe'
                 }).then((entries) => {
-                    //cache(CACHE_KEY, entries);
-                    //cache(TIMESTAMP_KEY, new Date());
                     recipe = fetchRandomRecipeFrom(entries.items);
-
                     setRecipe();
                 });
-           // }
+           }
         }
 
         function setRecipe() {
@@ -94,6 +90,16 @@
         function setLink() {
             $("#logo-link").attr("href", recipe.fields.blog);
             $("#link").attr("href", recipe.fields.blog);
+        }
+
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
         }
     });
 
