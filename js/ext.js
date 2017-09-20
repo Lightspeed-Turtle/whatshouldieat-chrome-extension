@@ -10,7 +10,7 @@ $(function() {
     });
 
     function fetchRecipe() {
-        var entry_id = getParameterByName("entry_id");
+        var entry_id = getParameterByName("entry");
 
         if (entry_id) {
             createContentfulClient()
