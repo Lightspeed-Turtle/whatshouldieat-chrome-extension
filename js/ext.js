@@ -1,5 +1,5 @@
 $(function() {
-    var recipe;
+    var currentRecipe;
     
     var CACHE_KEY = 'cached_recipes';
     var TIMESTAMP_KEY = 'cached_recipes_ts';
@@ -16,7 +16,7 @@ $(function() {
             createContentfulClient()
             .getEntry(entry_id)
             .then((entry) => {
-                recipe = entry;
+                currentRecipe = entry;
                 setRecipe();
             });
         }
@@ -24,7 +24,7 @@ $(function() {
             createContentfulClient().getEntries({
                 'content_type': 'recipe'
             }).then((entries) => {
-                recipe = fetchRandomRecipeFrom(entries.items);
+                currentRecipe = fetchRandomRecipeFrom(entries.items);
                 setRecipe();
             });
        }
@@ -63,7 +63,7 @@ $(function() {
 
     function setBackground() {
         var quality = 100;
-        var url = recipe.fields.image.fields.file.url + '?fm=jpg&w=1024&h=720&q=' + quality;
+        var url = currentRecipe.fields.image.fields.file.url + '?fm=jpg&w=1024&h=720&q=' + quality;
 
         var cssToInsert = "linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 42%,rgba(0,0,0,1) 81%,rgba(0,0,0,1) 99%), url(https:" + url + ") no-repeat fixed";
 
@@ -72,24 +72,24 @@ $(function() {
     }
 
     function setLogo() {
-        $("#logo").attr("src", "https:" + recipe.fields.logo.fields.file.url);
+        $("#logo").attr("src", "https:" + currentRecipe.fields.logo.fields.file.url);
     }
 
     function setRecipeName() {
-        $("#name").text(recipe.fields.name);
+        $("#name").text(currentRecipe.fields.name);
     }
 
     function setExecutionTime() {
-        $("#execution").text("temps d'exécution · " + recipe.fields.preparationTime);
+        $("#execution").text("temps d'exécution · " + currentRecipe.fields.preparationTime);
     }
 
     function setPortions() {
-        $("#portions").text(recipe.fields.portions);
+        $("#portions").text(currentRecipe.fields.portions);
     }
 
     function setLink() {
-        $("#logo-link").attr("href", recipe.fields.blog);
-        $("#link").attr("href", recipe.fields.blog);
+        $("#logo-link").attr("href", currentRecipe.fields.blog);
+        $("#link").attr("href", currentRecipe.fields.blog);
     }
 
     function getParameterByName(name, url) {
