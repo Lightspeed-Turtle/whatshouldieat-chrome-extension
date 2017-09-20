@@ -16,7 +16,7 @@ $(function() {
             createContentfulClient()
             .getEntry(entry_id)
             .then((entry) => {
-                recipe = fetchRandomRecipeFrom(entries.items);
+                recipe = entry;
                 setRecipe();
             });
         }
