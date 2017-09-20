@@ -1,0 +1,92 @@
+body {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: white;
+  text-transform: uppercase;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+h1, h2 {
+  cursor: default;
+}
+
+a {
+  color: black;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  padding-top: 2em;
+  padding-right: 2em;
+}
+
+h1 {
+  font-size: 4em;
+  font-family: "Old Standard TT", sans-serif;
+  font-style: italic;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+#portions {
+  margin-top: 0px;
+}
+
+.intro {
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  background-color:white;
+}
+
+#logo {
+  height: 100px;
+  max-width: 300px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+#link {
+  font-size: 1.5em !important;
+  font-weight: bold !important;
+  text-transform: uppercase;
+  margin-top: 70px;
+  border-radius: initial !important;
+}
+
+footer{
+  text-align: left;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  width:100%;
+  padding-right: 2em;
+  background-color: white;
+  color: black;
+}
+
+
+.underline {
+  text-decoration: underline;
+}
+
+#brand-call-to-action {
+  text-align: right;
+  margin-bottom: 1.5em;
+}
