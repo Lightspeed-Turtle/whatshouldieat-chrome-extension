@@ -3,10 +3,6 @@
   "title": "Food Tab",
   "version": "1.0",
   "author": "Lightspeed Turtle",
-  "devDependencies": {
-    "bootstrap": "^3.3.7",
-    "font-awesome": "^4.6.3",
-    "jquery": "^1.11.3"
-  },
+  "devDependencies": {},
   "dependencies": {}
 }
