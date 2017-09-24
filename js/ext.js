@@ -1,5 +1,3 @@
-var currentRecipe;
-
 var CACHE_KEY = 'cached_recipes';
 var TIMESTAMP_KEY = 'cached_recipes_ts';
 var DAYS_UNTIL_INVALIDATION = 1;
