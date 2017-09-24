@@ -1,10 +1,10 @@
 {
   "manifest_version": 2,
 
-  "name": "Foodie Tab",
+  "name": "What should I eat?",
   "description": "Essayez des nouvelles recettes tous les jours!",
   "version": "1.5",
-  "short_name": "Foodie Tab",
+  "short_name": "WhatShouldIEat",
   "chrome_url_overrides": {
       "newtab": "index.html"
    },
