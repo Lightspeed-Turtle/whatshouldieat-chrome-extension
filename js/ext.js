@@ -56,8 +56,8 @@ function fetchRandomRecipeFrom(recipes) {
 }
 
 function setBackground() {
-    var quality = 100;
-    var url = currentRecipe.fields.image.fields.file.url + '?fm=jpg&w=1024&h=720&q=' + quality;
+    var quality = 70;
+    var url = currentRecipe.fields.image.fields.file.url + '?fm=jpg&w=2048&h=1440&q=' + quality;
 
     var cssToInsert = "linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 42%,rgba(0,0,0,1) 81%,rgba(0,0,0,1) 99%), url(https:" + url + ") no-repeat fixed";
 
