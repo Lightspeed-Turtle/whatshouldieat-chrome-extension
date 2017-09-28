@@ -4,7 +4,8 @@ var _rollbarConfig = {
     captureUnhandledRejections: true,
     payload: {
         environment: "production",
-        recipe: currentRecipe
+        recipe: currentRecipe,
+        test: 'LightSpeed Turtle'
     }
 };
 // Rollbar Snippet
