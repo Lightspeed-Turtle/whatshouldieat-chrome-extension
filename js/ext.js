@@ -12,7 +12,8 @@ function fetchRecipe() {
     createContentfulClient().getEntries({
         'content_type': 'recipe'
     }).then((entries) => {
-        currentRecipe = fetchRandomRecipeFrom(entries.items);
+        frenchOnlyRecipes = $.grep(entries.items, (e) => { return e.fields.language == 'Fr' });
+        currentRecipe = fetchRandomRecipeFrom(frenchOnlyRecipes);
 
         if (entry_id) {
             currentRecipe = $.grep(entries.items, (e) => { return e.sys.id == entry_id })[0];
