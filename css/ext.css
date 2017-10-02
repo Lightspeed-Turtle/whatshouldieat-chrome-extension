@@ -97,7 +97,6 @@ footer{
 }
 
 .language:not(.unselected) {
-  cursor: crosshair;
   font-weight: bold;
 }
 
