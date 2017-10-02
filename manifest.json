@@ -3,7 +3,7 @@
 
   "name": "What should I eat? by Lightspeed Turtle",
   "description": "Comblez votre appétit avec chaque nouvel onglet",
-  "version": "1.9.1",
+  "version": "1.9.2",
   "short_name": "WhatShouldIEat",
   "chrome_url_overrides": {
       "newtab": "index.html"
