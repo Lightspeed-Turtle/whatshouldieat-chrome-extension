@@ -12,7 +12,7 @@ function fetchRecipe() {
     createContentfulClient().getEntries({
         'content_type': 'recipe'
     }).then((entries) => {
-        frenchOnlyRecipes = $.grep(entries.items, (e) => { return e.fields.language == 'Fr' });
+        frenchOnlyRecipes = $.grep(entries.items, (e) => { return e.fields.language == localStorage.getItem(LANGUAGE_CACHE_KEY) });
         currentRecipe = fetchRandomRecipeFrom(frenchOnlyRecipes);
 
         if (entry_id) {

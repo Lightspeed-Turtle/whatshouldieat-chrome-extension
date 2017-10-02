@@ -92,5 +92,16 @@ footer{
 }
 
 #rate-call-to-action {
+  margin-left: 2em;
   display: inline-block;
+}
+
+.language:not(.unselected) {
+  cursor: crosshair;
+  font-weight: bold;
+}
+
+.unselected {
+  text-decoration: underline;
+  cursor: pointer;
 }
