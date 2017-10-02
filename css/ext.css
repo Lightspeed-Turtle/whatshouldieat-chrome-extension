@@ -44,6 +44,10 @@ h3 {
     font-weight: 700;
 }
 
+#executionLabel h2 {
+  display: inline-block;
+}
+
 #portions {
   margin-top: 0px;
 }

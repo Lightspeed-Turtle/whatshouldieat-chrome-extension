@@ -38,8 +38,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6 col-md-offset-6">
-                    <h2 id="execution" class"uppercase bold"></h2>
+                <div id="executionLabel" class="col-md-6 col-md-offset-6">
+                    <h2 class="uppercase" data-localize="executionTime">temps d'exécution · </h2><h2 id="execution"><h2>
                 </div>
             </div>
             <div class="row">
@@ -49,7 +49,9 @@
             </div>
             <div class="row">
                 <div class="col-md-6 col-md-offset-6">
-                    <a id="link" href="#" role="button" class="btn btn-default uppercase">voir la recette complète</a>
+                    <a id="link" href="#" role="button" class="btn btn-default uppercase" data-localize="seeFullRecipe">
+                        voir la recette complète
+                    </a>
                 </div>
             </div>
         </section>
@@ -59,11 +61,11 @@
                 <div class="col-md-6 col-sm-6 hidden-xs">
                     <span id="french" class="language unselected">FR</span> <span href="#" id="english" class="language unselected">EN</span> 
                     <a href="https://chrome.google.com/webstore/detail/foodie-tab/odopgncgnappoijnnfddcipaegjmnihl?authuser=0">
-                        <h3 id="rate-call-to-action" class="underline">Donnez votre avis</h3>
+                        <h3 id="rate-call-to-action" class="underline" data-localize="giveYourReview">Donnez votre avis</h3>
                     </a>
                 </div>
                 <div class="col-md-6 col-sm-6 hidden-xs">
-                    <h3 id="brand-call-to-action">Créé et propulsé par <a href="https://www.facebook.com/lightspeedturtle/" class="underline">Lightspeed Turtle</a></h3>
+                    <h3 id="brand-call-to-action" data-localize="createdBy">Créé et propulsé par <a href="https://www.facebook.com/lightspeedturtle/" class="underline">Lightspeed Turtle</a></h3>
                 </div>
             </div>
         </footer>
@@ -73,7 +75,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/contentful@latest/dist/contentful.min.js"></script>
-    <script src="js/language.js"></script>
+    <script src="js/jquery.localize.min.js"></script>
+    <script src="i18n/language.js"></script>
     <script src="js/ext.js"></script>
 </body>
 

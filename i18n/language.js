@@ -2,7 +2,9 @@ $(document).ready(function() {
     loadLanguage();
     setLanguageSwitches();
     setSelected();
+    localize();
 });
+
 
 var LANGUAGE_CACHE_KEY = "lang";
 
@@ -43,4 +45,8 @@ function setSelected() {
 
 function reload() {
     window.location.reload();
+}
+
+function localize() {
+    $("[data-localize]").localize("messages", { language: localStorage.getItem(LANGUAGE_CACHE_KEY).toLowerCase() });
 }

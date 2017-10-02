@@ -73,7 +73,7 @@ function setRecipeName() {
 }
 
 function setExecutionTime() {
-    $("#execution").text("temps d'exécution · " + currentRecipe.fields.preparationTime);
+    $("#execution").text(currentRecipe.fields.preparationTime);
 }
 
 function setPortions() {
