@@ -13,7 +13,7 @@ function fetchRecipe() {
         'content_type': 'recipe'
     }).then((entries) => {
         localizedRecipes = $.grep(entries.items, (e) => { return e.fields.language == localStorage.getItem(LANGUAGE_CACHE_KEY) });
-        currentRecipe = fetchRandomRecipeFrom(frenchOnlyRecipes);
+        currentRecipe = fetchRandomRecipeFrom(localizedRecipes);
 
         if (entry_id) {
             currentRecipe = $.grep(entries.items, (e) => { return e.sys.id == entry_id })[0];
