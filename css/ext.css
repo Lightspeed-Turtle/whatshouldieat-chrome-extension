@@ -90,3 +90,7 @@ footer{
   text-align: right;
   margin-bottom: 1.5em;
 }
+
+#rate-call-to-action {
+  display: inline-block;
+}
