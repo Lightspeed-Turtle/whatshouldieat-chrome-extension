@@ -1,1 +1,1 @@
-var currentRecipe;
+var currentEntry;
