@@ -24,7 +24,7 @@ function fetchRecipe() {
             currentEntry = fetchRandomEntryFrom(localizedEntries);
     
             if (entry_id) {
-                currentEntry = $.grep(entries.items, (e) => { return e.sys.id == entry_id })[0];
+                currentEntry = $.grep(allEntries, (e) => { return e.sys.id == entry_id })[0];
             }
 
             setEntry();
