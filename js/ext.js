@@ -61,7 +61,7 @@ function setText() {
 
 function setSocialMediaButtons() {
     $('#link').remove();
-    $(".socialMedia").show();
+    //$(".socialMedia").show();
 
     $(".facebook").attr("href", "https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwhatshouldieat.xyz");
     $(".twitter").attr("href", "https://twitter.com/intent/tweet/?text=" + encodeURIComponent($("#executionTime").text()) + ";url=https%3A%2F%2Fwhatshouldieat.xyz");
