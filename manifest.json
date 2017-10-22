@@ -1,10 +1,10 @@
 {
   "manifest_version": 2,
 
-  "name": "What should I eat? by Lightspeed Turtle",
-  "description": "Comblez votre appétit avec chaque nouvel onglet",
-  "version": "1.9.9",
-  "short_name": "WhatShouldIEat",
+  "name": "What Should I Eat?",
+  "description": "Discover what to eat with a new tab",
+  "version": "1.9.11",
+  "short_name": "What Should I Eat?",
   "chrome_url_overrides": {
       "newtab": "index.html"
    },
